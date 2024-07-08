@@ -1,0 +1,15 @@
+.btnfa{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+    color: white;
+}
+
+.btnfa i:hover{
+    cursor: pointer;
+}
+
+.right{
+    margin-left: 70%;
+}

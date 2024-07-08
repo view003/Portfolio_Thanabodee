@@ -1,0 +1,38 @@
+#tooltip{
+    position: relative;
+    cursor: default;
+    border-bottom: 2px;
+    padding: 7px;
+    font-size: 17px;
+}
+
+#tooltipText{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #fefbe7;
+    color: #000;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#tooltipText::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border: none;
+}  
+
+#tooltip:hover #tooltipText{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}

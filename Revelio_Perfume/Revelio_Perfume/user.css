@@ -1,0 +1,7 @@
+.email, .password{
+    justify-content: flex-start;
+}
+
+.scalef{
+    width: 30rem;
+}

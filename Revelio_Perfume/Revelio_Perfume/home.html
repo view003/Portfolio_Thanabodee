@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Revelio Perfume</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link href="ori.css" rel="stylesheet">
+    <link href="font_pridi.css" rel="stylesheet">
+    <link href="font_dekko.css" rel="stylesheet">
+    <link href="favorite.css" rel="stylesheet">
+    <link href="card.css" rel="stylesheet">
+    <link href="tootip.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
+    <link rel="icon" href="../image/logo_mini.png">
+  </head>
+  <body class="bgbody">
+
+    <section id="Navbar" class="navigation">
+      <nav class="navbar navbar-expand-lg bgnav fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="home.html">
+            <img src="../image/logo.png" alt="Home" width="150" height="48">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link font_pridi" aria-current="page" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font_pridi" href="user.html">USER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font_pridi" href="product.htm">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font_pridi" href="about_us.html">ABOUT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section><!--Navbar-->
+
+    <section id="pic1">
+        <div id="carouselExampleSlidesOnly" class="carousel slide container-fluid-lg" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../image/im1.png" class="w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </section><!--pic1-->
+
+    <section id="pic2">
+        <div align="center" class="p-5">
+            <img src="../image/im2.png" class="d-block w-50 rounded-5">
+          </div>
+    </section><!--pic2-->
+
+    <section id="recommend">
+        <div class="text-center">
+            <div class="bgRe"><h2 class="font_pridi">Recommend</h2></div>
+            <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                    <img src="../image/Peony.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Peony</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="../image/Peach.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Peach</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="../image/Sandalwood.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Sandalwood</h5>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <img src="../image/Rose.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Rose</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="../image/Sakura.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Sakura</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="../image/Jasmine.png" class="img-fluid" alt="">
+                    <h5 class="font_pridi">Jasmine</h5>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section><!--recommend-->
+
+    <section id="detail">
+        <div class="row g-0 mt-4 bgde">
+            <div class="col-lg p-5 my-auto" w="50">
+              <h3 class="text-center font_dekko">Revelio Perfume</h3>
+              <div class="text-center justify font_dekko">
+                ถือกำหนดการเลือกน้ำหอมที่ไม่ถูกใจตามท้องตลาด การใช้น้ำหอมที่ไม่ตรงตามบุคลิกและเสน่ห์ของตนเองเป็นการหาได้ยากที่จะเหมาะสมกับตัวเองจริงๆ ทำให้อยากเสริมสร้างการใช้ชีวิตและบุคลิกผ่านน้ำหอม การใช้น้ำหอม สื่อถึงเอกลักษณ์ประจำตัวอย่างมากที่สุด
+              </div>
+            </div>
+              <div class="col-lg p-5" id="pic"></div>
+          </div>
+    </section><!--detail-->
+
+    <section id="product_ex">
+        <div id="row" class="row text-center p-5">
+            <div align="center" class="col-lg order-lg-1 order-3">
+              <div class="p-3 bgpicdu">
+                <div class="btnsfa">
+                  <Button onclick="Toggle1()" id="btnh1" class="btnfa right"><i class="fa-solid fa-star"></i></Button>
+                </div>
+                <div><img src="../image/4.png" class="img-fluid"></div>
+                <!--<div class="display-7 fs-6 mt-2">รายละเอียดสินค้า</div>-->
+                <div id="tooltip">
+                  <span id="tooltipText">จ๊ะเอ๋</span>
+                  <span class="font_dekko">รายละเอียดสินค้า</span>
+                </div>
+                <!--<button type="button" class="btn btnc text-dark mt-3" onclick="openPopup()">🛒 290 ฿</button>-->
+                <div class="containerp">
+                  <button type="submit" class="btnp" onclick="openPopup()">🛒 290 ฿</button>
+                  <div class="popup" id="popup">
+                      <img src="../image/404-tick.png">
+                      <h2>Thank You!</h2>
+                      <p>ขอบคุณสำหรับการสั่งซื้อ</p>
+                      <button type="button" onclick="closePopup()">OK</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup" id="popup">
+                <img src="../image/404-tick.png">
+                <h2>Thank You!</h2>
+                <p>LoL</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            </div><!--1-->
+  
+            <div align="center" class="col-lg order-1g-2 order-2 ">
+              <div class="p-3 bgpicdu">
+                <div class="btnsfa">
+                  <Button onclick="Toggle2()" id="btnh2" class="btnfa right"><i class="fa-solid fa-star"></i></Button>
+                </div>
+                <div><img src="../image/1.png" class="img-fluid"></div>
+                <div id="tooltip">
+                  <span id="tooltipText">จ๊ะเอ๋</span>
+                  <span class="font_dekko">รายละเอียดสินค้า</span>
+                </div>
+                <!--<div class="display-7 fs-6 mt-2">รายละเอียดสินค้า</div>-->
+                <!--<button type="button" class="btn btnc text-dark mt-3">🛒 290 ฿</button>-->
+                <div class="containerp">
+                  <button type="submit" class="btnp" onclick="openPopup()">🛒 290 ฿</button>
+                  <div class="popup" id="popup">
+                      <img src="../image/404-tick.png">
+                      <h2>Thank You!</h2>
+                      <p>ขอบคุณสำหรับการสั่งซื้อ</p>
+                      <button type="button" onclick="closePopup()">OK</button>
+                  </div>
+                </div>
+              </div>  
+            </div><!--2-->
+  
+            <div align="center" class="col-lg order-lg-3 order-1">
+              <div class="p-3 bgpicdu">
+                <div class="btnsfa">
+                  <Button onclick="Toggle3()" id="btnh3" class="btnfa right"><i class="fa-solid fa-star"></i></Button>
+                </div>
+                <div><img src="../image/6.png" class="img-fluid"></div>
+                <div id="tooltip">
+                  <span id="tooltipText">จ๊ะเอ๋</span>
+                  <span class="font_dekko">รายละเอียดสินค้า</span>
+                </div>
+                <!--<div class="display-7 fs-6 mt-2">รายละเอียดสินค้า</div>-->
+                <!--<button type="button" class="btn btnc text-dark mt-3">🛒 290 ฿</button>-->
+                <div class="containerp">
+                  <button type="submit" class="btnp" onclick="openPopup()">🛒 290 ฿</button>
+                  <div class="popup" id="popup">
+                      <img src="../image/404-tick.png">
+                      <h2>Thank You!</h2>
+                      <p>ขอบคุณสำหรับการสั่งซื้อ</p>
+                      <button type="button" onclick="closePopup()">OK</button>
+                  </div>
+                </div>
+              </div>
+            </div><!--3-->
+        </div>
+    </section><!--product_ex-->
+
+    <section id="ev_re">
+        <div align="center" class="bgev_re">
+              <div class="p-3" id="bgER">
+                  <h3 class="font_pridi">Event & Review</h3>
+              </div>
+              <div class="row container center">
+                  <div class="col-8 mb-4 order-lg-1 order-3 scalere">
+                      <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Review" aria-label="Search">
+                      </form>
+                  </div>
+
+                  <div class="col-2 mb-4 order-lg-2 order-2  ">
+                      <div>
+                          <button type="button" class="scalebtnev_re btnev_re"><h4 class="font_pridi">Review</h4></button>
+                      </div>
+                  </div>
+
+                  <div class="col-2 mb-4  order-lg-3 order-1 ">
+                      <div>
+                          <button type="button" class="scalebtnev_re btnev_re"><h4 class="font_pridi">Event</h4></button>
+                      </div>
+                  </div>
+              </div>   
+        </div>    
+    </section><!--ev_re-->
+
+    <section id="Footer">
+        <div id="divfoot" class="container-fluid bgfooter p-2">
+            <div class="row text-center">
+              <div class="col-lg  mt-3 order-lg-1 order-3">
+                <div class="mt-3"><img src="../image/logo_footer.png" alt="Home" width="200" height="70"></div>
+                <div class="fs-5 mt-3 text-start ms-5 font_pridi">Duis sodales vitae ipsum non
+                  facilisis. Donec convallis diam in
+                  arcu mollis pulvinar. Donec vitae
+                  metus at enim interdu</div>
+              </div><!--LEFT-->
+      
+              <div class="col-lg  mt-3 order-lg-2 order-2 mt-5">
+                <div class="mt-4">
+                  <div><h5>SERVICES</h5></div>
+                  <div><h5 class="mt-3 font_pridi">INFO</h5></div>
+                  <div><h5 class="mt-3 font_pridi">FAQ</h5></div>
+                  <div><h5 class="mt-3 font_pridi">CONTACT</h5></div>
+                </div>
+              </div><!--CENTER-->
+      
+              <div class="col-lg  mt-5  order-lg-3 order-1 ">
+                <div class="mt-4">
+                  <h5 class="font_dekko">ติดตามเรา</h5>
+                  <div>
+                    <a href="#"><img src="../image/Facebook.png" class="images"></a>
+                    <a href="#"><img src="../image/Instragram.png" class="images"></a>
+                    <a href="#"><img src="../image/Wechat.png" class="images"></a>
+                    <a href="#"><img src="../image/Twitter.png" class="images"></a>
+                  </div>
+                  <h5 class="mt-2 font_dekko">ช่องทางการชำระเงิน</h5>
+                  <div>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../image/Bank.png" class="imageb"></a>
+                  </div>
+                </div>
+              </div><!--RIGHT-->
+            </div>
+          </div><!--FOOTER-->
+    </section><!--Footer-->
+
+    <section id="modal_card">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">PAYMENT
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="container_card">
+                <form action="">  
+                    <div class="row">  
+                        <div class="col">
+                            <h3 class="title">billing address</h3>
+                            <div class="inputBox">
+                                <span>full name :</span>
+                                <input type="text" placeholder="john deo">
+                            </div>
+                            <div class="inputBox">
+                                <span>email :</span>
+                                <input type="email" placeholder="example@example.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>address :</span>
+                                <input type="text" placeholder="room - street - locality">
+                            </div>
+                            <div class="inputBox">
+                                <span>city :</span>
+                                <input type="text" placeholder="mumbai">
+                            </div>
+            
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>state :</span>
+                                    <input type="text" placeholder="india">
+                                </div>
+                                <div class="inputBox">
+                                    <span>zip code :</span>
+                                    <input type="text" placeholder="123 456">
+                                </div>
+                            </div>         
+                        </div>           
+                        <div class="col">           
+                            <h3 class="title">payment</h3>           
+                            <div class="inputBox">
+                                <span>cards accepted :</span>
+                                <img src="../image/card_img.png" alt="">
+                            </div>
+                            <div class="inputBox">
+                                <span>name on card :</span>
+                                <input type="text" placeholder="mr. john deo">
+                            </div>
+                            <div class="inputBox">
+                                <span>credit card number :</span>
+                                <input type="number" placeholder="1111-2222-3333-4444">
+                            </div>
+                            <div class="inputBox">
+                                <span>exp month :</span>
+                                <input type="text" placeholder="january">
+                            </div>
+            
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>exp year :</span>
+                                    <input type="number" placeholder="2022">
+                                </div>
+                                <div class="inputBox">
+                                    <span>CVV :</span>
+                                    <input type="text" placeholder="1234">
+                                </div>
+                            </div>            
+                        </div>                
+                    </div>
+                </form>
+          
+            </div>    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--Card-->
+
+    <section id="favo_box">
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+    </section><!--favo_box-->
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="icon.js"></script>
+    <script>
+      var btnvar1 = document.getElementById('btnh1');
+
+      function Toggle1(){
+              if (btnvar1.style.color =="yellow") {
+                  btnvar1.style.color = "white"
+              }
+              else{
+                  btnvar1.style.color = "yellow"
+              }
+      }
+
+      var btnvar2 = document.getElementById('btnh2');
+
+      function Toggle2(){
+              if (btnvar2.style.color =="yellow") {
+                  btnvar2.style.color = "white"
+              }
+              else{
+                  btnvar2.style.color = "yellow"
+              }
+      }
+
+      var btnvar3 = document.getElementById('btnh3');
+
+      function Toggle3(){
+              if (btnvar3.style.color =="yellow") {
+                  btnvar3.style.color = "white"
+              }
+              else{
+                  btnvar3.style.color = "yellow"
+              }
+      }
+    </script><!--favo-->
+    <script>
+      let popup = document.getElementById("popup");
+
+      function openPopup(){
+          popup.classList.add("open-popup")
+      }
+
+      function closePopup(){
+          popup.classList.remove("open-popup")
+      }
+    </script><!--popup-->
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.wrapper{
+  margin-top: 100px;
+}
+
+.wrapper h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contact .contacts{
+  background: #f9ebc8;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.contact .contacts h3{
+  color: #000;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.contact .contacts p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.contact .contacts .contact_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.contact .contacts .contact_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.margintop{
+  margin-top: 65px;
+}
